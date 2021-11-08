@@ -57,11 +57,11 @@ em {
 ul {
     display: block;
     padding: 10px 41%;
-    margin-bottom: 2px;
-    line-height: 1.5
+    margin-bottom: 2px;    line-height: 1.5
 }
 
 ul h4 {
+    font-size: 22px;
     text-align: center;
     font-weight: bold;
 }
@@ -78,6 +78,7 @@ ul li {
 ul a:hover {
     font-size: 24px;
     font-weight: bold;
+    color: rgb(247, 166, 166);
 }
 
 footer {
