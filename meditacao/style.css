@@ -56,8 +56,9 @@ em {
 
 ul {
     display: block;
-    padding: 10px 41%;
-    margin-bottom: 2px;    line-height: 1.5
+    padding: 10px 30%;
+    margin-bottom: 2px; 
+    line-height: 1.5
 }
 
 ul h4 {
