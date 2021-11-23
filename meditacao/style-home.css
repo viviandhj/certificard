@@ -1,9 +1,51 @@
+header {
+    background: #fdd6d2;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.header-img {
+    width: 20%;
+    margin: 0 20px;
+}
+
+nav {
+    position: absolute;
+    top: 96px;
+    right: 20px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #999999;
+}
 
 h1 {
-    margin: 30px;
-    font-size: 38px;
+    margin: 40px 0;
+    font-size: 50px;
     font-weight: bold;
     color: #FFFFFF;
+}
+
+.border-header {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 .main-image {
@@ -11,7 +53,7 @@ h1 {
 }
 
 body {
-    background:rgb(248, 208, 208)
+    background:#fdd6d2;
 }
 
 .centered-text {
@@ -54,28 +96,28 @@ em {
 }
 
 
-ul {
+.sq-midle ul {
     display: block;
     padding: 10px 30%;
     margin-bottom: 2px; 
     line-height: 1.5
 }
 
-ul h4 {
+.sq-midle ul h4 {
     font-size: 24px;
     text-align: center;
     font-weight: bold;
 }
 
-ul a {   
+.sq-midle ul a {   
     color: rgb(247, 166, 166);
 }
 
-ul li {
+.sq-midle ul li {
     text-align: center;
 }
 
-ul a:hover {
+.sq-midle ul a:hover {
     font-size: 24px;
     font-weight: bold;
     color: rgb(247, 139, 139);
@@ -83,7 +125,7 @@ ul a:hover {
 
 footer {
     text-align: center;
-    background: rgb(248, 208, 208);
+    background: #fdd6d2;;
     padding: 30px 0;
 }
 
