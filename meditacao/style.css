@@ -191,17 +191,18 @@ td, th {
 
 .meditation-list form {
     text-align: center;
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
-.input-botton {
+.input-button {
    color: #444444;
+   padding: 3px 6px;
 }
 
 .input-text {
     border: 1px solid #888888;
     border-radius: 2px;
-    padding: 2px 25px;
+    padding: 4px 25px;
     
 }
 
@@ -210,4 +211,10 @@ td, th {
     padding:3px;
     font-size: 18px;
     
+}
+
+.meditations-done {
+    font-size: 19px;
+    color: #888888;
+    margin: 10px;
 }
