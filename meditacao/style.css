@@ -184,7 +184,7 @@ td, th {
 .meditation-list h2 {
     text-align: center;
     color: #888888;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     
 }
@@ -196,13 +196,14 @@ td, th {
 
 .input-button {
    color: #444444;
-   padding: 3px 6px;
+   padding: 5px 6px;
+   border-color: #FFFFFF;
 }
 
 .input-text {
     border: 1px solid #888888;
     border-radius: 2px;
-    padding: 4px 25px;
+    padding: 6px 25px;
     
 }
 
@@ -213,8 +214,18 @@ td, th {
     
 }
 
-.meditations-done {
+.meditations-to-do {
     font-size: 19px;
     color: #888888;
     margin: 10px;
+    list-style-type: none;
+    background: #d4c5c588;
+    padding: 5px 0;
+}
+
+.check-button {
+    margin-left: 10px;
+    color: #666666;
+    border-color: #FFFFFF;
+    
 }

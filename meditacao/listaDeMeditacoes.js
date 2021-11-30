@@ -16,11 +16,13 @@ novaMeditacao.addEventListener("click", (evento) => {
 
     const li = document.createElement("li")
 
-    li.classList.add("meditations-done")
-
-    ul.appendChild(li)
+    li.classList.add("meditations-to-do")
 
     li.innerHTML = conteudo
+   
+    ul.appendChild(li)
+    li.appendChild(BotaoConclui())
+    
 
    // console.log(conteudo)
 
@@ -28,3 +30,19 @@ novaMeditacao.addEventListener("click", (evento) => {
 
  })
 
+
+const BotaoConclui = ()=> {
+
+    const botaoConclui = document.createElement("button")
+
+    botaoConclui.classList.add("check-button")
+
+    botaoConclui.innerText = "check"
+
+    botaoConclui.addEventListener("click", ()=> {
+        console.log("fui clicado")
+    })
+
+    return botaoConclui
+
+}
