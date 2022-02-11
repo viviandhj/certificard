@@ -195,9 +195,14 @@ td, th {
 }
 
 .input-button {
-   color: #444444;
-   padding: 5px 6px;
-   border-color: #FFFFFF;
+    border: none;
+    box-shadow: 0 0 8px rgb(0 0 0 / 10%);
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 5px 6px;
+    color: #666666;
+   
 }
 
 .input-text {
@@ -214,18 +219,71 @@ td, th {
     
 }
 
-.meditations-to-do {
+li {
+    list-style-type: none;
+}
+
+
+.task {
     font-size: 19px;
     color: #888888;
     margin: 10px;
     list-style-type: none;
     background: #d4c5c588;
     padding: 5px 0;
+
 }
 
 .check-button {
     margin-left: 10px;
     color: #666666;
     border-color: #FFFFFF;
-    
 }
+
+.task {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #666666;
+    display: flex;
+
+    margin-bottom: 0.5rem;
+    padding: 1rem 3rem;
+  }
+  
+  .check-button, .delete-button {
+    color: #666666;
+    border: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  
+  
+  .task.done .check-button {
+    background-color: #46494C;
+    color: #F6F1D1;
+  }
+  
+  .check-icon {
+    display: block;
+    padding: 1px;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+  }
+  
+  .task.done .check-icon {
+    background-color: #0B2027;
+  }
+  
+  .content {
+    margin: 0;
+  }
+  
+  .task.done .content {
+    text-decoration: line-through;
+  }
+  
