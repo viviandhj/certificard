@@ -5,8 +5,15 @@
         const criarTarefa = (evento)=>{ // ?? o q sigifica esse evento ???
 
             evento.preventDefault()
+
+            const tarefas = JSON.parse(localStorage.getItem("tarefas")) || []
+            
             const input = document.querySelector("[data-form-input]")
             const valor = input.value
+
+            const calendario = document.querySelector("[data-form-date]")
+            const data = moment(calendario.value)
+            const dataFormatada = data.format("DD/MM/YYYY")
 
             const tarefa = document.createElement("li") 
             tarefa.classList.add("task")
@@ -15,47 +22,33 @@
 
             lista.appendChild(tarefa)
 
-            const conteudo = `<p class="content">${valor}</p>`
+            const conteudo = `<p class="content">${dataFormatada} - ${valor}</p>`
 
             tarefa.innerHTML = conteudo
 
             tarefa.appendChild(BotaoConclui()) // coloquei em cima do lista.appendChild(tarefa) e não funcionou, troquei pra aqui e funcionou.
             tarefa.appendChild(BotaoDeleta())
 
+            const dados = {
+                valor,
+                dataFormatada
+            }
+
+            const tarefasAtualizadas = [...tarefas, dados]
+
+            localStorage.setItem("tarefas", JSON.stringify(tarefasAtualizadas))
+
             input.value = " "
+
+            imprime()
         }
 
         const novaTarefa = document.querySelector("[data-form-button]")
 
         novaTarefa.addEventListener("click", criarTarefa)
 
-
-        // const criarTarefa = (evento) => {
-
-        //     evento.preventDefault()
-            
-        //     const lista = document.querySelector("[data-list]")
-        //     const input =  document.querySelector("[data-form-input]")
-        //     const valor = input.value 
-
-        //     const tarefa = document.createElement("li")
-        //     tarefa.classList.add("task")
-            
-        //     const conteudo = `<p class="content">${valor}</p>`
-
-        //     tarefa.innerHTML = conteudo
-
-        //     lista.appendChild(tarefa)
-        //     input.value = " "
-
-        // }
-
-        // const novaTarefa =  document.querySelector("[data-form-button]")
-
-        // novaTarefa.addEventListener("click", criarTarefa)
-
-
         
+
         const BotaoConclui = () => {
             
             const botaoConclui = document.createElement("button")
@@ -104,6 +97,10 @@
             return botaoDeleta
 
         }
+
+        // não consegui implementar Armazenado dados Aula 3.2 (PEGAR A TAREFA DO LOCALSTORAGE E IMPRIMIR)
+
+        
 
     }
 

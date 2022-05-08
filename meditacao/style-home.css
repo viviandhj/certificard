@@ -139,3 +139,37 @@ footer img {
     font-size: 13px;
     margin: 20px 0 0;
 }
+
+@media screen and (max-width: 480px) {
+
+    body h1 {
+        font-size: 36px;
+    }
+
+    nav {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 20px;
+    }
+
+    .caixa {
+        width: 100%;
+        text-align: center;
+    }
+    
+    main h2 {
+        font-size: 28px;
+    }
+
+    main h3 {
+        font-size: 24px;
+    }
+
+    .text-description {
+        margin: 35px 10px;
+    }
+
+    .sq-midle ul {
+        padding: 10px 20%;
+}
